@@ -1,0 +1,51 @@
+[
+    {
+      "campaignReferenceId": "103766845",
+      "type": "COUPON",
+      "bannerExclusiveTag": "SHOPPERS_DRUG_MART",
+      "belongsTo": [
+        "ALL_SDM_PHX"
+      ],
+      "startDate": "2021-01-20T00:00:00",
+      "endDate": "2021-01-20T23:59:59",
+      "imageUrl": "https://assets.pcoptimum.ca/offer/103766845_en_{size}.jpg",
+      "isHero": true,
+      "myList": false,
+      "offerFeedSection": "REGULAR",
+      "offerText": {
+        "qualificationThreshold": 4000,
+        "qualificationThresholdUnits": "DOLLARS",
+        "qualificationTextPart1": "When you spend",
+        "qualificationTextPart2": "or more on ",
+        "productText": "almost anything in-store - This offer cannot be combined with other department or total store offers"
+      },
+      "reward": {
+        "rewardText": null,
+        "value": 5000,
+        "units": "POINTS",
+        "pcfAccelerator": null
+      },
+      "details": {
+        "allowDefer": false,
+        "allowReject": false,
+        "allowAddToShoppingList": false,
+        "discoveryOfferCopy": null,
+        "legalText": "Spend $40 or more after all coupons and discounts are deducted and before taxes in a single transaction (excludes purchase of tobacco, lottery tickets, alcohol, gift cards, prepaid card products including phone cards, transit/event tickets, post office transactions, passport photos, cash back, delivery charges, all non-participating 3rd party operations and any other products which are provincially regulated (including pharmacy-related transactions) or as we determine from time to time) to earn the points indicated. Product availability may vary by store. We are not obligated to award points based on errors or misprints. No cash value. Minimum redemption 10,000 points. See terms & conditions for redemption restrictions. ",
+        "productTextLong": "Almost anything in-store. Certain restrictions apply. This offer cannot be combined with department or total store offers. Customers will automatically receive the best of the available offers should they qualify.  Offer can only be redeemed at Shoppers Drug Mart or Pharmaprix. Offer cannot be used in conjunction with employee discount or any other promotional offer.",
+        "offerExplanation": null,
+        "shoppableUrl": null
+      },
+      "status": "LOADED",
+      "templateNumber": "6",
+      "templateType": "BASKET",
+      "limit": 1,
+      "hidden": false,
+      "expiredText": "Your __5000 points__ offer is expired",
+      "redeemedText": {
+        "congratulatoryText": "Fantastic!",
+        "mainText": "You earned __5000 points__ on this offer"
+      },
+      "tags": [],
+      "id": "25990795531"
+    }
+  ]
