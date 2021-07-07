@@ -1,9 +1,9 @@
 # Loyalty Development Proxy
-This project contains the mock middleware server for the front-end build of the PC Optimum web app. The mock middleware combines koa, koa-better-http-proxy, and koa-router to create a
-solution which proxies requests to midtiers lower UAT API, utilizes a local API to mimic upcoming API features, and can alter proxied responses.
+This project contains the mock middleware server for a front-end build. The mock middleware combines koa, koa-better-http-proxy, and koa-router to create a
+solution which proxies requests to an API, utilizes a local API to mimic upcoming API features, and can alter proxied responses.
 
 ### Node
-Our application has been built with node 10.15.0 therefore you should use it during development.
+This application has been built with node 10.15.0 therefore you should use it during development.
 It is highly recommended to use `nvm` to manage your node versions. See [the nvm github](https://github.com/creationix/nvm) for more details.
 Before installing nvm via command line make sure that you have a `bash_profile` in your home directory.
 If no `bash_profile` exists create one by entering `touch ~/.bash_profile` in your terminal.
@@ -14,13 +14,13 @@ If no `bash_profile` exists create one by entering `touch ~/.bash_profile` in yo
 - `npm install` in the project root directory
 
 ## Running the mock server
-The application uses a mock middleware combines which koa, koa-better-http-proxy, and koa-router to create a solution which proxies requests to midtiers lower UAT API, allows for the modification of proxied responses, and utilizes a router middleware to allow for mimicking upcoming API features.
+The application uses a mock middleware combines which koa, koa-better-http-proxy, and koa-router to create a solution which proxies requests to an API, allows for the modification of proxied responses, and utilizes a router middleware to allow for mimicking upcoming API features.
 - `npm start` runs the mock server. Access the mock server at [http://localhost:3003](http://localhost:3003)
 
 It is important to determine when to use the router middleware vs. modifying the proxy's response.
 
-* Modifying the proxy's response is best used when a value on the response needs to be manipulated (e.g. modifying a members segmentation to return a specific marketing tile) or midtier plans to add a new key to an existing endpoint.
-* The router middleware is used when the endpoint does not yet exist in the midtiers lower UAT API. By creating the endpoint in the router middleware, it allows the developer to complete the work on the client side (create services, actions, reducers, models, etc.) by being provided the expected response (as outlined in the [midtier documentation](https://docs.api.loblaw.digital/)).
+* Modifying the proxy's response is best used when a value on the response needs to be manipulated like the addition of a new key to an existing endpoint.
+* The router middleware is used when the endpoint does not yet exist. By creating the endpoint in the router middleware, it allows the developer to complete the work on the client side (create services, actions, reducers, models, etc.) by being provided the expected response.
 *The router middleware can also be used to completely override the proxy response if the request being proxied has a matching route in the router middleware (see example in offers route).
 
 ### Middleware key package
