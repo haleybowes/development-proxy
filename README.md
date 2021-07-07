@@ -1,4 +1,4 @@
-# Loyalty Development Proxy
+# Development Proxy
 This project contains the mock middleware server for a front-end build. The mock middleware combines koa, koa-better-http-proxy, and koa-router to create a
 solution which proxies requests to an API, utilizes a local API to mimic upcoming API features, and can alter proxied responses.
 
