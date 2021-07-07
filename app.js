@@ -27,13 +27,16 @@ app.use(logger())
   * This method sets up our proxy and allows us to manipulate the response if the url includes 'urlToManipulate`.
   * In the case below, we are adding the key 'name' to the response object for the url which includes 'points'.
 */
+
+const urlToProxy = '';
+
 app.use(
-  proxy('https://api-uat.pcoptimum.ca', {
+  proxy(urlToProxy, {
     userResDecorator: function (proxyRes, proxyResData, ctx) {
-      // const urlToManipulate = 'loyalty/promocode-api/v1/promocode';
-      // if (ctx.url.includes(urlToManipulate)) {
-        // return ctx.throw(400,'Custom Error Message Goes Here!');
-      // }
+      const urlToManipulate = '';
+      if (ctx.url.includes(urlToManipulate)) {
+        return ctx.throw(400,'Custom Error Message Goes Here!');
+      }
       return proxyResData;
     },
   }),
